@@ -5,8 +5,7 @@ install:
   - pip install pelican
   - pip install markdown
 before_script:
-    - COMMIT_MESSAGE="Publishing site on `date "+%Y-%m-%d %H:%M:%S"` from
-    `git log -n 1 --format='commit %h - %s'`"
+    - COMMIT_MESSAGE="Publishing site on `date "+%Y-%m-%d %H:%M:%S"` from `git log -n 1 --format='commit %h - %s'`"
 script:
   - pelican content
   - git checkout -b master # Replace master with gh-pages if applicable
