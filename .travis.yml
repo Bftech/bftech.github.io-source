@@ -15,4 +15,4 @@ script:
   - 'git commit -m "${COMMIT_MESSAGE}"'
   - git filter-branch -f --subdirectory-filter output/ # Again, replace _site/
   # Obviously, replace with your repo's SSH URL and the appropriate branch
-  - git push -f git@github.com:Bftech/bftech.github.io.git master:master
+  - git push -f https://github.com/Bftech/bftech.github.io-source.git master:master
